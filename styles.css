@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: linear-gradient(to bottom right, #0f2027, #ffffff, #2c5364); /* Gradiente suave */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to bottom right, #2c5364, #ffffff); /* Gradiente sutil */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+header h1 {
+    font-size: 2.5rem; /* Aumentar tamaño para visibilidad */
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase; /* Resalta con mayúsculas */
+    letter-spacing: 2px; /* Espaciado de letras */
+    display: none; /* Mantener oculto si no es necesario */
+}
+
+header .logo img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Main Section - Image Gallery */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px; /* Bordes más suaves */
+    
+    
+}
+
+main img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes más suaves */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px 20px 20px 0px;
+    margin-top: 0;
+}
+
+main img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+}
+
+main h2 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem; /* Aumentar el tamaño */
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    padding: 15px;
+    display: none;
+    
+}
+
+
+/* Section Styles */
+section {
+    max-width: 900px; /* Ancho mayor para más legibilidad */
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo más suave */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+section p {
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #555;
+    text-align: center;
+}
+.descripcion {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer Styles */
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    font-size: 1.2rem;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); /* Sombra suave para el footer */
+}
+
+footer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px; /* Separación más cómoda entre botones */
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: transparent; /* Fondo transparente para los botones */
+    box-shadow: none; /* Asegurarse de que no tenga sombra */
+}
+
+footer button:hover {
+    transform: translateY(-2px); /* Ligero movimiento al hacer hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Un fondo tenue cuando pasa el cursor (opcional) */
+    text-align: center;
+}
+
+footer i {
+    margin-right: 8px;
+    font-size: 24px;
+    color: #fff; /* Color blanco para los iconos */
+    
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Coloca las imágenes en columna en pantallas pequeñas */
+    }
+
+    main img {
+        max-width: 100%;
+        margin-bottom: 20px;
+        
+
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    footer button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+}
